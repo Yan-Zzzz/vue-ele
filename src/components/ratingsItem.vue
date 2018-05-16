@@ -14,7 +14,7 @@
                         <span>{{item.deliveryTime}}</span>
                     </p>
                     <p>{{item.text}}</p>
-                    <div class="block-list">
+                    <div class="block-list" v-if="item.recommend">
                         <span v-for="(list,index) in item.recommend" :key="index">
                             {{list}}
                         </span>
